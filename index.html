@@ -259,9 +259,9 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": ["Person", "Actor"],
-          "@id": "https://www.henritahvanainen.com/#person",
-          "mainEntityOfPage": "https://www.henritahvanainen.com",
+          "@type": "Person",
+          "@id": "https://henritahvanainen.com/#person",
+          "mainEntityOfPage": "https://henritahvanainen.com",
           "name": "Henri Tahvanainen",
           "givenName": "Henri",
           "familyName": "Tahvanainen",
@@ -271,7 +271,6 @@
             "@type": "Country",
             "name": "Finland"
           },
-          "ethnicity": "Nordic / Finnish",
           "height": {
             "@type": "QuantitativeValue",
             "value": 176,
@@ -282,8 +281,6 @@
             "value": 90,
             "unitCode": "KGM"
           },
-          "hairColor": "Bald",
-          "eyeColor": "Blue-Green",
           "jobTitle": [
             "Actor",
             "Performer",
@@ -294,7 +291,7 @@
             "Media Assistant"
           ],
           "description": "Henri Tahvanainen is a Finnish performing audiovisual artist based in Southern Finland who seamlessly fuses raw creativity with technical proficiency, rooted in over two decades of active engagement in arts and culture. As a true polymath of modern media, he provides services as a non-union actor, live performer, voice talent, sound designer, and music producer. Beyond his work in various productions, he operates Occult Helsinki Walking Tours, where he personally showcases the highlights and hidden gems of Finland's capital. Drawing from history, folklore, mythology, and symbolism, he serves guests with meaningful experiences through engaging and insightful storytelling with a side of warm local hospitality.",
-          "url": "https://www.henritahvanainen.com",
+          "url": "https://henritahvanainen.com",
           "email": "mailto:contact@henritahvanainen.com",
           "contactPoint": {
             "@type": "ContactPoint",
@@ -325,12 +322,6 @@
               "alternateName": "en"
             }
           ],
-          "founder": {
-            "@type": "LocalBusiness",
-            "name": "Occult Helsinki Walking Tours",
-            "url": "https://occulthelsinki.com",
-            "description": "Professional guided walking tours exploring the fascinating history, folklore, and cultural heritage of Finland’s capital."
-          },
           "sameAs": [
             "https://imdb.me/henritahvanainen",
             "https://www.linkedin.com/in/henritahvanainen",
@@ -404,6 +395,16 @@
               }
             }
           ]
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://occulthelsinki.com/#business",
+          "name": "Occult Helsinki Walking Tours",
+          "url": "https://occulthelsinki.com",
+          "description": "Professional guided walking tours exploring the fascinating history, folklore, and cultural heritage of Finland’s capital.",
+          "founder": {
+            "@id": "https://henritahvanainen.com/#person"
+          }
         }
       ]
     }
