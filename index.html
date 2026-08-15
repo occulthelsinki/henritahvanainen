@@ -245,37 +245,165 @@
         }
 
         @media (max-width: 600px) {
-        body { padding: 40px 20px; }
-        h1 { font-size: 2.2rem; }
-        .btn { width: 100%; max-width: 320px; }
-        article { width: 100%; }
-    }
+            body { padding: 40px 20px; }
+            h1 { font-size: 2.2rem; }
+            .btn { width: 100%; max-width: 320px; }
+            article { width: 100%; }
+        }
     </style>
 
+    <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Henri Tahvanainen",
-      "jobTitle": "Actor, Voice Talent, Audiovisual Artist",
-      "description": "Finnish performing audiovisual artist, non-union screen actor, live performer, and professional voice-over talent based in Southern Finland.",
-      "url": "https://henritahvanainen.com",
-      "email": "contact@henritahvanainen.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Hyvinkää",
-        "addressRegion": "Uusimaa",
-        "addressCountry": "FI"
-      },
-      "sameAs": [
-        "https://imdb.me/henritahvanainen",
-        "https://www.linkedin.com/in/henri-tahvanainen-media/",
-        "https://www.voices.com/profile/henritahvanainenmedia",
-        "https://www.instagram.com/henri.tahvanainen.media",
-        "https://www.tiktok.com/@henri.tahvanainen.media",
-        "https://www.youtube.com/channel/UCQIldeLxcGFuExJ2VqyUAUQ",
-        "https://www.facebook.com/henri.tahvanainen.media",
-        "https://linktr.ee/henri.tahvanainen.media"
+      "@graph": [
+        {
+          "@type": ["Person", "Actor"],
+          "@id": "https://www.henritahvanainen.com/#person",
+          "mainEntityOfPage": "https://www.henritahvanainen.com",
+          "name": "Henri Tahvanainen",
+          "givenName": "Henri",
+          "familyName": "Tahvanainen",
+          "birthDate": "1994-04-14",
+          "gender": "Male",
+          "nationality": {
+            "@type": "Country",
+            "name": "Finland"
+          },
+          "ethnicity": "Nordic / Finnish",
+          "height": {
+            "@type": "QuantitativeValue",
+            "value": 176,
+            "unitCode": "CM"
+          },
+          "weight": {
+            "@type": "QuantitativeValue",
+            "value": 90,
+            "unitCode": "KGM"
+          },
+          "hairColor": "Bald",
+          "eyeColor": "Blue-Green",
+          "jobTitle": [
+            "Actor",
+            "Performer",
+            "Voice Talent",
+            "Sound Designer",
+            "Music Producer",
+            "Audiovisual Artist",
+            "Media Assistant"
+          ],
+          "description": "Henri Tahvanainen is a Finnish performing audiovisual artist based in Southern Finland who seamlessly fuses raw creativity with technical proficiency, rooted in over two decades of active engagement in arts and culture. As a true polymath of modern media, he provides services as a non-union actor, live performer, voice talent, sound designer, and music producer. Beyond his work in various productions, he operates Occult Helsinki Walking Tours, where he personally showcases the highlights and hidden gems of Finland's capital. Drawing from history, folklore, mythology, and symbolism, he serves guests with meaningful experiences through engaging and insightful storytelling with a side of warm local hospitality.",
+          "url": "https://www.henritahvanainen.com",
+          "email": "mailto:contact@henritahvanainen.com",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "contact@henritahvanainen.com",
+            "contactType": "customer service",
+            "availableLanguage": [
+              "Finnish",
+              "English"
+            ]
+          },
+          "homeLocation": {
+            "@type": "Place",
+            "name": "Hyvinkää, Southern Finland"
+          },
+          "workLocation": {
+            "@type": "Place",
+            "name": "Helsinki Metropolitan Area & Remote Worldwide"
+          },
+          "knowsLanguage": [
+            {
+              "@type": "Language",
+              "name": "Finnish",
+              "alternateName": "fi"
+            },
+            {
+              "@type": "Language",
+              "name": "English",
+              "alternateName": "en"
+            }
+          ],
+          "founder": {
+            "@type": "LocalBusiness",
+            "name": "Occult Helsinki Walking Tours",
+            "url": "https://occulthelsinki.com",
+            "description": "Professional guided walking tours exploring the fascinating history, folklore, and cultural heritage of Finland’s capital."
+          },
+          "sameAs": [
+            "https://imdb.me/henritahvanainen",
+            "https://www.linkedin.com/in/henritahvanainen",
+            "https://linktr.ee/henri.tahvanainen.media",
+            "https://www.voices.com/profile/henritahvanainen",
+            "https://voice123.com/henritahvanainen",
+            "https://www.instagram.com/henri.tahvanainen.media",
+            "https://www.youtube.com/@henri.tahvanainen.media",
+            "https://www.tiktok.com/@henri.tahvanainen.media",
+            "https://www.facebook.com/henri.tahvanainen.media",
+            "https://occulthelsinki.com"
+          ],
+          "hasCredential": {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "Vocational Qualification",
+            "educationalLevel": "Media Assistant",
+            "name": "Vocational Qualification in Audiovisual Communication"
+          },
+          "knowsAbout": [
+            "Screen Acting",
+            "Voiceover Recording",
+            "Vocal Stunt Performance",
+            "Scare Acting",
+            "Sound Design",
+            "Music Production",
+            "Set Etiquette",
+            "Folklore",
+            "Occultism",
+            "Storytelling"
+          ],
+          "makesOffer": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Acting",
+                "description": "Professional non-union screen acting and performing for film, television, commercials, and immersive live events."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Voiceover",
+                "description": "Broadcast-quality voice acting and narration tailored to bring scripts, characters, and brand stories to life."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Sound Design",
+                "description": "Custom sound design, sound effects, and audio mixing for media, film, and games."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Music Production",
+                "description": "Original music composition, arrangement, audio production, mixing and mastering."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Occult Helsinki Guided Walking Tours",
+                "description": "Professional guided walking tours exploring the fascinating history, folklore, and cultural heritage of Finland’s capital.",
+                "url": "https://occulthelsinki.com"
+              }
+            }
+          ]
+        }
       ]
     }
     </script>
